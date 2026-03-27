@@ -3,14 +3,406 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>BISMILLAH</h1>
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita facilis voluptas reiciendis quos.
-    </p>
+    <!-- link css -->
+    <link rel="stylesheet" href="./bls.css">
+    <!-- link boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
     
-</body>
-</html>
+    <body>
+        <!-- TOP BAR -->
+        <div class="topbar">
+            <div class="top-left">
+                <span class="phone"><i class='bx bx-phone-call'></i> 1174</span>
+                <a href="#">Franshiza</a>
+                <a href="#">Biz haqimizda</a>
+                <a href="#">Bo'sh ish o'rinlari</a>
+            </div>
+            <div class="dropdown">
+                <input type="checkbox" id="lang">
+                <label for="lang" class="btn-hee"><img src="uzFlag.svg" alt="">Uz<i class='bx bxs-chevron-down'></i></label>
+    
+                <div class="dropdown-menu">
+                    <p><img src="ruFlag.svg" alt="">Ru</p>
+                </div>
+            </div>
+        </div>
+        <!-- <hr class="legh"> -->
+        
+        <header class="top-navigation-shell">
+            <div class="main-inner-row">
+        
+                <!-- LOGO QISMI -->
+                <div class="branding-cell">
+                    <img src="./logo_new.svg" alt="Bellissimo" class="brand-img">
+                </div>
+        
+                <!-- LOKATSIYA TANLASH -->
+                <div class="geo-selector-unit">
+                    <div class="square-icon-box">
+                        <i class='bx bxs-location-plus'></i>
+                    </div>
+                    <div class="geo-label-stack">
+                        <div class="primary-city">Qo'qon</div>
+                        <div class="secondary-eta">42 daqiqa</div>
+                    </div>
+                </div>
+        
+                <!-- 24/7 STATUS -->
+                <div class="delivery-status-chip">
+                    <div class="grey-text-badge">24/7</div>
+                    <div class="chip-description">
+                        Bepul yetkazish endi 24/7 <br> mavjud
+                    </div>
+                </div>
+                <!-- O'NG TOMONDAGI DIVLAR -->
+                <div class="utility-actions-group">
+                    <div class="halal-cert-mark">
+                        <img src="./halal.webp" alt="Halal">
+                    </div>
+                
+                    <div class="wallet-balance-view">
+                        <img src="./Без названия.svg" alt="Coin" class="coin-icon-svg">
+                        <span class="balance-digit">0</span>
+                    </div>
+                
+                    <div class="vertical-separator-line"></div>
+                    <a href="https://bellissimo.uz/login">
+                
+                        <button class="entry-portal-btn">Kirish</button>
+                    </a>
+                </div>
+                
+                </div>
+                </header>
+                
+                <!-- HERO -->
+                <section class="hero">
+                    <img src="hero.png" alt="">
+                </section>
+                <div class="container">
+                    <div class="main-banner">
+                        <a href="https://bellissimo.uz/">
+                
+                            <img src="./b5746673-ba47-4a66-aa91-379687119236.webp" alt="Bellissimo Aksiya" class="banner-img">
+                        </a>
+                    </div>
+                    <div class="main">
+                        <header class="top">
+                            <div class="toggle">
+                                <button class="tgl-btn active">Yetkazib Berish</button>
+                                <button class="tgl-btn">Olib Ketish</button>
+                            </div>
+                
+                            <div class="inp-box">
+                                <input type="text" placeholder="Yetkazib berish manzilini tanlang" class="inp">
+                                <span class="edit-icon"></span>
+                            </div>
+                        </header>
+                
+                        <nav class="cats">
+                            <div class="tags">
+                                <button class="tag active">Kombo</button>
+                                <button class="tag">Pitsa</button>
+                                <button class="tag">Gazaklar</button>
+                                <button class="tag">Desertlar</button>
+                                <button class="tag">Souslar</button>
+                            </div>
+                            <div class="cart">
+                                <a href="http://127.0.0.1:5501/savat.html">
+                                    <button">Savatga qo‘shish</button>
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- komboooooooooooooooooooooooooooooooooooooooooo -->
+                    <div class="shell">
+                        <h2 class="caption"></h2>
+                
+                        <div class="matrix">
+                
+                            <div class="tile" onclick="showDialog(this)">
+                                <img src="./33b46d3a-a289-4971-88f5-bd0a3807785c.webp">
+                                <h4>Pizaa</h4>
+                                <p>Yangi va mazali fast food</p>
+                                <span class="badge">69 000 so'm</span>
+                            </div>
+                
+                            <div class="tile" onclick="showDialog(this)">
+                                <img src="./601282db-7274-43e4-ac74-e8987d53dd6e.webp">
+                                <h4>Chiabatta</h4>
+                                <p>Issiq va mazali fast food</p>
+                                <span class="badge">56 000 so'm</span>
+                            </div>
+                
+                            <div class="tile" onclick="showDialog(this)">
+                                <img src="./b3635a5f-1556-47e8-a600-d88dd8170b36.webp">
+                                <h4>Pizza</h4>
+                                <p>Achchiq va mazali</p>
+                                <span class="badge">44 000 so'm</span>
+                            </div>
+                
+                            <div class="tile" onclick="showDialog(this)">
+                                <img src="./33b46d3a-a289-4971-88f5-bd0a3807785c.webp">
+                                <h4>Pizza</h4>
+                                <p>fony bilan</p>
+                                <span class="badge">55 000 so'm</span>
+                            </div>
+                
+                        </div>
+                    </div>
+                    <!-- pizaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+                    
+                    <div class="shell">
+                        <h2 class="caption">Pizza</h2>
+                    
+                        <div class="matrix">
+                    
+                            <div class="tile" onclick="showDialog(this)">
+                                <img src="./33b46d3a-a289-4971-88f5-bd0a3807785c.webp">
+                                <h4>Pizaa</h4>
+                                <p>Yangi va mazali fast food</p>
+                                <span class="badge">69 000 so'm</span>
+                            </div>
+                    
+                            <div class="tile" onclick="showDialog(this)">
+                                <img src="./601282db-7274-43e4-ac74-e8987d53dd6e.webp">
+                                <h4>Chiabatta</h4>
+                                <p>Issiq va mazali fast food</p>
+                                <span class="badge">56 000 so'm</span>
+                            </div>
+                    
+                            <div class="tile" onclick="showDialog(this)">
+                                <img src="./b3635a5f-1556-47e8-a600-d88dd8170b36.webp">
+                                <h4>Pizza</h4>
+                                <p>Achchiq va mazali</p>
+                                <span class="badge">44 000 so'm</span>
+                            </div>
+                    
+                            <div class="tile" onclick="showDialog(this)">
+                                <img src="./33b46d3a-a289-4971-88f5-bd0a3807785c.webp">
+                                <h4>Pizza</h4>
+                                <p>fony bilan</p>
+                                <span class="badge">55 000 so'm</span>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    
+                    <!-- aggggggggggagaggggggggggggggggggggggggggggggggggggggggggggggggggggggggaaaaaaaaaaaaaaaaag -->
+                    
+                    <div class="shell">
+                        <h2 class="caption">Disertlar</h2>
+                    
+                        <div class="matrix">
+                    
+                            <div class="tile" onclick="showDialog(this)">
+                                <img src="./8e827ad6-07c1-4666-9710-2e88e769a5c6.webp">
+                                <h4>mazali</h4>
+                                <p>Yangi va mazali </p>
+                                <span class="badge">25 000 so'm</span>
+                            </div>
+                    
+                            <div class="tile" onclick="showDialog(this)">
+                                <img src="./b643ceb5-6a4e-4101-a3dc-91c5327c588a.webp">
+                                <h4>Okey</h4>
+                                <p>Issiq va mazali</p>
+                                <span class="badge">36 000 so'm</span>
+                            </div>
+                    
+                            <div class="tile" onclick="showDialog(this)">
+                                <img src="./02708d12-129a-42d3-b69e-287f19e14751.webp">
+                                <h4>shirin</h4>
+                                <p>shirin va mazali</p>
+                                <span class="badge">34 000 so'm</span>
+                            </div>
+                    
+                            <div class="tile" onclick="showDialog(this)">
+                                <img src="./8e827ad6-07c1-4666-9710-2e88e769a5c6.webp">
+                                <h4>0</h4>
+                                <p>velu bilan</p>
+                                <span class="badge">31 000 so'm</span>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    
+                    <!-- gazaklarrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr -->
+                    
+                    <div class="shell">
+                        <h2 class="caption">Gazaklar</h2>
+                    
+                        <div class="matrix">
+                    
+                            <div class="tile" onclick="showDialog(this)">
+                                <img src="./4313a341-dc2e-4e0a-a33e-0b3a8b19c1c2.webp">
+                                <h4>Pishloqli</h4>
+                                <p>Yangi va mazali </p>
+                                <span class="badge">25 000 so'm</span>
+                            </div>
+                    
+                            <div class="tile" onclick="showDialog(this)">
+                                <img src="./6a0457e3-5606-4bf1-a8ed-ade0a5dc3485.webp">
+                                <h4>kartoshka</h4>
+                                <p>Issiq va mazali</p>
+                                <span class="badge">36 000 so'm</span>
+                            </div>
+                    
+                            <div class="tile" onclick="showDialog(this)">
+                                <img src="./c2f51f99-49b6-45d3-bded-67a5d21ad4eb.webp">
+                                <h4>sendvich</h4>
+                                <p>Achchiq va mazali</p>
+                                <span class="badge">34 000 so'm</span>
+                            </div>
+                    
+                            <div class="tile" onclick="showDialog(this)">
+                                <img src="./4313a341-dc2e-4e0a-a33e-0b3a8b19c1c2.webp">
+                                <h4>Pishloqli</h4>
+                                <p>Pishloq bilan</p>
+                                <span class="badge">31 000 so'm</span>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    
+                    <!-- MODAL -->
+                    <div class="backdrop" id="backdrop">
+                        <div class="dialog">
+                            <span class="exit" onclick="hideDialog()">&times;</span>
+                    
+                            <img id="dImg">
+                            <h3 id="dTitle"></h3>
+                            <p id="dDesc"></p>
+                            <p id="dPrice"></p>
+                    
+                            <button class="action" id="addBtn" onclick="startAdd()">Savatga qo'shish</button>
+                    
+                            <div class="qty-box" id="qtyBox" style="display:none;">
+                                <button onclick="minus()">-</button>
+                                <span id="qty">1</span>
+                                <button onclick="plus()">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- souslarrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr -->
+                    <div class="shell">
+                        <h2 class="caption">Souslar</h2>
+                    
+                        <div class="matrix">
+                    
+                            <div class="tile" onclick="showDialog(this)">
+                                <img src="./b33f0b64-fa93-4f15-8c94-21ceb4ce722b.webp">
+                                <h4>roll</h4>
+                                <p>Yangi va maza</p>
+                                <span class="badge">25 000 so'm</span>
+                            </div>
+                    
+                            <div class="tile" onclick="showDialog(this)">
+                                <img src="./D.webp">
+                                <h4>Chiabatta</h4>
+                                <p>shirin va maza</p>
+                                <span class="badge">36 000 so'm</span>
+                            </div>
+                    
+                            <div class="tile" onclick="showDialog(this)">
+                                <img src="./L.webp">
+                                <h4>kepchu</h4>
+                                <p>Achchiq va mazali</p>
+                                <span class="badge">34 000 so'm</span>
+                            </div>
+                    
+                            <div class="tile" onclick="showDialog(this)">
+                                <img src="./D.webp">
+                                <h4>Pishloqli</h4>
+                                <p>Pishloq bilan</p>
+                                <span class="badge">31 000 so'm</span>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    
+                    <!-- MODAL -->
+                    <div class="backdrop" id="backdrop">
+                        <div class="dialog">
+                            <span class="exit" onclick="hideDialog()">&times;</span>
+                            <img id="dImg">
+                            <h3 id="dTitle"></h3>
+                            <p id="dDesc"></p>
+                            <p id="dPrice"></p>
+                            <button class="action">Savatga qo'shish</button>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- 4. MOBILE APP-->
+                    <section class="app-download-section">
+                        <div class="container app-content-wrapper">
+                            <div class="app-screenshot">
+                                <img src="./images (7).jpg" alt="App Screenshot">
+                            </div>
+                            <div class="app-info">
+                                <h2>Ilovada buyurtma berish qulayroq!</h2>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i> Aksiyalar va qaynoq chegirmalar haqida birinchilardan
+                                        bo'lib bilib oling</li>
+                                    <li><i class="fas fa-check-circle"></i> Buyurtma va yetkazuvchi holatini kuzating</li>
+                                    <li><i class="fas fa-check-circle"></i> Bellissimo Club sodiqlik dasturining barcha
+                                        imtiyozlaridan foydalana</li>
+                                    <li><i class="fas fa-check-circle"></i> Buyurtmalar tarixini doim kuzatish imkoniga ega bo'ling
+                                    </li>
+                                </ul>
+                                <div class="app-buttons">
+                                    <a href="#" target="_blank"><img src="./images (2).png" alt="App Store"></a>
+                                    <a href="#" target="_blank"><img src="./images (8).jpg  " alt="Google Play"></a>
+                                </div>
+                                <p>Telefoningiz kamerasi yordamida ilovani yuklab oling.</p>
+                                <div class="qr-code">
+                                    <img src="./website-footer-qr-06f12d27385aaf3169ec8f4434f85ed1 (1).webp" alt="QR Code">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- 5. FOOTER (Rasmdagi kabi) -->
+                    <footer class="main-footer">
+                        <div class="container footer-grid">
+                            <div class="footer-col footer-about">
+                                <img src="./logo_new.svg" alt="Bellissimo Logo">
+                                <p>RAQAMGA QO'NG'IROQ QILING - 1174</p>
+                            </div>
+                            <div class="footer-col">
+                                <h4>Biz haqimizda</h4>
+                                <ul>
+                                    <li><a href="#">Ommaviy oferta</a></li>
+                                    <li><a href="#">Maxfiylik siyosati</a></li>
+                                    <li><a href="#">Halol sertifikati</a></li>
+                                    <li><a href="#">Restoranlar</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-col">
+                                <h4>Bizning o'rinlarimiz</h4>
+                                <ul>
+                                    <li><a href="#">Bo'sh ish o'rinlari</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-col footer-payment">
+                                <h4>To'lov turlari</h4>
+                                <div class="payment-icons">
+                                    <img src="payme-footer (1).svg" alt="Payme">
+                                    <img src="./click-footer.svg" alt="Uzcard">
+                                    <img src="./uzcard-footer.svg" alt="Click">
+                                </div>
+                            </div>
+                            <div class="footer-col footer-social">
+                                <h4>Bizni kuzatib boring</h4>
+                                <div class="social-icons">
+                                    <i class='bx bxl-facebook-circle'></i>
+                                    <i class='bx bxl-instagram'></i>
+                                    <i class='bx bxl-telegram'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <script src="bls.js"></script>
+                    </body>
+                    
+                    </html>

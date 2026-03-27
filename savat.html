@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./savat.css">
+</head>
+
+<body>
+    <div class="sky-upper-strip">
+        <div class="frame-container flex-between">
+            <div class="strip-left-links">
+                <a href="#"><i class="fas fa-phone-alt"></i> 1174</a>
+                <a href="#">Franshiza</a>
+                <a href="#">Biz haqimizda</a>
+                <a href="#">Bo'sh ish o'rinlari</a>
+            </div>
+            <div class="strip-right-tools">
+                <div class="lang-toggle-unit">
+                    <img src="uzFlag.svg" alt="UZ"> Uz <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="main-navigation-hull">
+        <div class="frame-container flex-align-center">
+
+            <div class="identity-plate">
+                <img src="./logo_new.svg" alt="Bellissimo" class="identity-img">
+            </div>
+
+            <div class="spatial-selector-node">
+                <div class="icon-cube-grey">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="spatial-info-stack">
+                    <div class="spatial-primary">Qo'qon <i class="fas fa-chevron-down"></i></div>
+                    <div class="spatial-secondary">42 daqiqa</div>
+                </div>
+            </div>
+
+            <div class="delivery-status-indicator">
+                <div class="grey-text-pill">24/7</div>
+                <div class="status-memo">
+                    Bepul yetkazish endi 24/7 <br> mavjud
+                </div>
+            </div>
+
+            <div class="utility-action-dock">
+                <div class="halal-verification-mark">
+                    <img src="./halal.webp" alt="Halal">
+                </div>
+
+                <div class="wallet-balance-hub">
+                    <img src="./Без названия.svg" alt="Coin" class="coin-svg">
+                    <span class="digit-count">0</span>
+                </div>
+
+                <button class="portal-entry-trigger">Kirish</button>
+            </div>
+        </div>
+    </header>
+    <button class="pay-btn" onclick="payNow()">To‘lash</button>
+<div class="cart-page">
+    <h2 class="title">Savat</h2>
+
+    <div id="cartList" class="cart-list"></div>
+
+    <h2 id="total" class="total"></h2>
+</div>
+    <script src="madal.js"></script>
+</body>
+
+</html>
