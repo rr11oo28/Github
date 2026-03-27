@@ -45,7 +45,6 @@ function hideDialog() {
     document.getElementById("backdrop").classList.remove("visible");
 }
 
-// BOSHLASH (button -> +/-)
 function startAdd() {
     document.getElementById("addBtn").style.display = "none";
     document.getElementById("qtyBox").style.display = "flex";
@@ -66,7 +65,7 @@ function minus() {
     }
 }
 
-// CARTGA YOZISH
+
 function addCart() {
     let item = {
         ...currentProduct,
@@ -77,11 +76,34 @@ function addCart() {
     localStorage.setItem("cart", JSON.stringify(cart));
 }
 
-// QUANTITY o‘zgarsa update
 function updateCart() {
     let lastIndex = cart.length - 1;
     if (lastIndex >= 0) {
         cart[lastIndex].qty = qty;
         localStorage.setItem("cart", JSON.stringify(cart));
     }
+}
+function openAddressModal(){
+    document.getElementById("addressModal").style.display = "block";
+}
+
+function closeAddressModal(){
+    document.getElementById("addressModal").style.display = "none";
+}
+
+function saveAddress(){
+    let manzil = document.getElementById("manzil").value;
+
+    if(manzil.trim() === ""){
+        alert("Manzilni kiriting!");
+        return;
+    }
+    window.location.href = "bls.html";
+}
+function openAddressModal(){
+    document.getElementById("addressModal").classList.add("active");
+}
+
+function closeAddressModal(){
+    document.getElementById("addressModal").classList.remove("active");
 }

@@ -68,10 +68,10 @@
                 </div>
 
                 <div class="vertical-separator-line"></div>
-                <a href="https://bellissimo.uz/login">
+              
 
-                    <button class="entry-portal-btn">Kirish</button>
-                </a>
+                <button class="entry-portal-btn" onclick="openAddressModal()">Kirish</button>
+                
             </div>
 
         </div>
@@ -91,8 +91,8 @@
         <div class="main">
             <header class="top">
                 <div class="toggle">
-                    <button class="tgl-btn active">Yetkazib Berish</button>
-                    <button class="tgl-btn">Olib Ketish</button>
+                    <button class="tgl-btn ">Yetkazib Berish</button>
+                    <button class="tgl-btn ">Olib Ketish</button>
                 </div>
 
                 <div class="inp-box">
@@ -103,14 +103,14 @@
 
             <nav class="cats">
                 <div class="tags">
-                    <button class="tag active">Kombo</button>
+                    <button class="tag ">Kombo</button>
                     <button class="tag">Pitsa</button>
                     <button class="tag">Gazaklar</button>
                     <button class="tag">Desertlar</button>
                     <button class="tag">Souslar</button>
                 </div>
                 <div class="cart">
-                    <a href="http://127.0.0.1:5501/savat.html"> <button">Savatga qo‘shish</button></a>
+                    <a href="./savat.html"> <button">Savatga qo‘shish</button></a>
                 </div>
             </nav>
         </div>
@@ -263,7 +263,31 @@
 
             </div>
         </div>
+        <!-- shfuipa -->
+<div class="modal" id="addressModal">
+    <div class="wrapper">
+        <div class="card">
+            <span class="close" onclick="closeAddressModal()">&times;</span>
 
+            <h2>Yetkazish manzili</h2>
+
+            <input type="text" placeholder="Manzil" class="full" id="manzil">
+
+            <div class="row">
+                <input type="text" placeholder="Uy/ofis">
+                <input type="text" placeholder="Domofon">
+                <input type="text" placeholder="Kirish">
+                <input type="text" placeholder="Qavat">
+            </div>
+
+            <input type="text" placeholder="Izoh" class="full">
+
+            <div class="map"></div>
+
+            <button onclick="saveAddress()">Saqlash</button>
+        </div>
+    </div>
+</div>
         <!-- MODAL -->
      <div class="backdrop" id="backdrop">
     <div class="dialog">

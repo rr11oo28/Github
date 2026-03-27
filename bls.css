@@ -61,7 +61,12 @@ body {
     border-bottom: 1px solid #f2f2f2;
     padding: 12px 0;
 }
-
+.top{
+    margin-top: 30px;
+}
+.tgl-btn:active{
+    background: #525252;
+}
 .main-inner-row {
     max-width: 1240px;
     margin: 0 auto;
@@ -311,15 +316,10 @@ body {
     transition: 0.3s;
 }
 
-.tgl-btn.active {
+.tgl-btn:focus {
     background: #fff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-
-.tgl-btn:hover:not(.active) {
-    background: #e0e0e0;
-}
-
 .inp-box {
     flex: 1;
     position: relative;
@@ -341,8 +341,101 @@ body {
     top: 12px;
     cursor: pointer;
 }
+/* madal k */
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
 
-/* CATEGORIES */
+.modal.active {
+    display: flex;
+}
+.modal .card {
+    width: 500px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+    position: relative;
+   
+}
+.close {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    font-size: 26px;
+    cursor: pointer;
+    color: #999;
+    transition: 0.3s;
+}
+.card h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.card input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.card input:focus {
+    border: 1px solid #0f7b53;
+    background: #fff;
+    outline: none;
+}
+.card .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.map {
+    height: 180px;
+    background: linear-gradient(135deg, #ddd, #bbb);
+    border-radius: 12px;
+    margin: 15px 0;
+}
+.card button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #0f7b53, #00a86b);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+    .card .row {
+        grid-template-columns: 1fr;
+    }
+}
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.active {
+    display: flex;
+}
 .cats {
     display: flex;
     justify-content: space-between;
@@ -365,8 +458,8 @@ body {
     transition: 0.3s;
 }
 
-.tag.active,
-.tag:hover {
+
+.tag:focus {
     background: #ff4d00;
     color: #fff;
 }
