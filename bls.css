@@ -7,7 +7,6 @@
 body {
     background: #ffffff;
 }
-
 .legh {
     max-width: 1200px;
     margin: 30px auto;
@@ -426,7 +425,6 @@ body {
     .card .row {
         grid-template-columns: 1fr;
     }
-}
 .modal {
     display: none;
     justify-content: center;
